@@ -1,2 +1,2 @@
 # data-engineer_afril-istihawa
-Pengumpulan tugas SI Batch 6
+Pengumpulan Tugas SI Batch 6
