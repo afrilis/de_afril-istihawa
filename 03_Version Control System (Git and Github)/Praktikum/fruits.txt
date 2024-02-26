@@ -2,4 +2,5 @@ my fruits:
 
 -apple
 -banana
--pear
+-watermelon
+
