@@ -3,3 +3,5 @@ my fruits:
 -apple
 -banana
 -pear
+-durian
+-rambutan
