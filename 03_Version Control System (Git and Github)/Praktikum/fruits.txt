@@ -2,4 +2,4 @@ my fruits:
 
 -apple
 -banana
--pear
+-nanas
