@@ -1,5 +1,0 @@
-my fruits:
-
--apple
--banana
--pear
