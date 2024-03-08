@@ -23,4 +23,7 @@ Adapun set. Tidak jauh berbeda dengan list dan tuple yang berupa array/larik. Ak
 
 DICTIONARY
 Merupakan struktur data yang digunakan untuk menyimpan data berorientasikan key-value. Cara pendeklarasiannya menggunakan kurung kurawal {} atau kurung biasa().Juga dapat menggunakan fungsi dict. Dictionary dapat diakses dengan cara menyebutkan secara langsung key yang akan diakses.
-Selanjutnya kita dapat melakukan pengoperasian pada dictionary seperti menambahkan key value baru, mengupdate apa yang sudah ada, atau pun menghapus menggunakan del statement
+Selanjutnya kita dapat melakukan pengoperasian pada dictionary seperti menambahkan key value baru, mengupdate apa yang sudah ada, atau pun menghapus menggunakan del statement.
+
+ALGORITMA SEARCHING
+Digunakan untuk mencari data pada sebuah list. Asumsikan kita menjelajahi tiap data yang ada pada list.
