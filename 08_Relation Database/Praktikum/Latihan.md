@@ -1,3 +1,13 @@
+Merancang Skema Database
+1. Buatlah rancangan skema database dengan kriteria sebagai berikut:
+    a. Sistem dapat menyimpan data mengenai detail item product, yaitu : product, product_type,             product_description, operator, payment_methods.
+    b. Sistem juga harus menyimpan data mengenai pelanggan yang akan membeli product tsb diantaranya : nama, alamat, tanggal lahir, status_user, gender, created_at, updated_at.
+    c. Sistem dapat mencatat transaksi pembelian dari pelanggan.
+    d. Sistem dapat mencatat detail transaksi pembelian dari pelanggan.
+Gunakan draw.io atau lucidchart untuk membuat ERD.
+![](../Screenshots/Skema_Database.jpg)
+
+
 Data Definition Language (DDL)
 1. Create database alta_online_shop.
 
@@ -9,6 +19,7 @@ Data Definition Language (DDL)
     ![](../Screenshots/tb_product.png)
     Create table transaction, transaction detail.
     ![](../Screenshots/tb_transaction.png)
+
     ![](../Screenshots/tb_transaction_detail.png)
 
 3. Create tabel kurir dengan field id, name, created_at, updated_at.
