@@ -12,12 +12,13 @@ Data Definition Language (DDL)
 1. Create database alta_online_shop.
 
 2. Dari schema Olshop yang telah kamu kerjakan di, Implementasikanlah menjadi table pada MySQL.
-    Create table user.
+Create table user.
 ![](../Screenshots/tb_user.png)
 
-    Create table product, product type, operators, product description, payment_method.
+Create table product, product type, operators, product description, payment_method.
 ![](../Screenshots/tb_product.png)
-    Create table transaction, transaction detail.
+
+Create table transaction, transaction detail.
 ![](../Screenshots/tb_transaction.png)
 
 ![](../Screenshots/tb_transaction_detail.png)
@@ -35,11 +36,11 @@ Data Definition Language (DDL)
 ![](../Screenshots/drop_tabel_shipping.png)
 
 7. Silahkan menambahkan entity baru dengan relation 1-to-1, 1-to-many, many-to-many. Seperti:
-    1-to-1: payment method description.
+1-to-1: payment method description.
 ![](../Screenshots/payment_method_desc.png)
 
-    1-to-many: user dengan alamat.
+1-to-many: user dengan alamat.
 ![](../Screenshots/user_alamat.png)
 
-    many-to-many: user dengan payment method menjadi user_payment_method_detail.
+many-to-many: user dengan payment method menjadi user_payment_method_detail.
 ![](../Screenshots/payment_method_detail.png)
