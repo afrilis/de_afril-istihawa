@@ -34,6 +34,6 @@ Batch data pipeline. Karena berdasarkan cirinya batch data pipeline dapat diguna
 
 2. Berdasarkan soal nomor 1, buat diagram sederhana dari data pipeline yang dipilih. Diagram dapat dibuat dengan draw.io, excalidraw atau tools lainnya yang sejenis.
 
-![](../Screenshots/Diagram_batch-pipeline.drawio.png)
+![](../screenshots/Diagram_batch-pipeline.drawio.png)
 
 referensi: video pembelajaran alterra.
