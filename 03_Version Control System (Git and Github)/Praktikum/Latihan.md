@@ -34,7 +34,7 @@ Lakukan commit.
 2. Lakukan Pull Request pada branch tersebut sehingga akan menambah hal baru pada branch main/master
 terdapat foto terkait Pull Request.
 
-![](../Screenshots/pull_req.png)
+![](../Screenshots/Pull_req.png)
 
 
 ## Eksplorasi 
@@ -42,11 +42,13 @@ terdapat foto terkait Pull Request.
 1. Pilih project terserah kalian, praktekkan salah satu workflow serderhana dan buktikan dengan Screenshoot. Contoh workflow yang dapat digunakan adalah github flow/gitflow/trunk base.
 Terdapat foto terkait flow yang disebutkan.
 
-![](../Screenshots/Workflow.png)
+![](../Screenshots/workflow.png)
 
 2. Lakukan management konflik pada Github
 
-![](../Screenshots/Conflik.png)
+![](../Screenshots/resolve_conflict.png)
 
 3. Lakukan code review pada Github yang kalian kumpulkan.
 Terdapat foto seperti apa itu code review.
+
+![](../Screenshots/code_review.png)
