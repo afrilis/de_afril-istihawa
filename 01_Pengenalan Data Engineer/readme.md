@@ -1,4 +1,4 @@
-# H1 RESUME PENGENALAN DATA ENGINEER
+# RESUME PENGENALAN DATA ENGINEER
 Data engineer adalah seorang profesional yang bertanggung jawab untuk merancang, membangun, dan memelihara sistem dan infrastruktur data yang kompleks. Tugas utama seorang data engineer meliputi:
 
 - Pemrosesan Data: Data engineer mengelola proses ekstraksi, transformasi, dan pemuatan data (ETL) dari berbagai sumber data ke dalam penyimpanan data yang dapat diakses dan dianalisis.
