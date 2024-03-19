@@ -2,3 +2,4 @@ feature tambahan:
 - Add payment functionality to checkout process.
 - Include additional shipping options in checkout
 - Update checkout UI for better user experience
+- Implement guest checkout feature
