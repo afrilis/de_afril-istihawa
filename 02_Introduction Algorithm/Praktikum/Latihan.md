@@ -1,3 +1,5 @@
+# LATIHAN
+
 1. Buatlah sebuah flowchart untuk menghitung luas lingkaran.
 
 ![image](../screenshots/Flowcart_luas-lingkaran.drawio.png)
