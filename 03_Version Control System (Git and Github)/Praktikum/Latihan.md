@@ -34,7 +34,7 @@ Lakukan commit.
 2. Lakukan Pull Request pada branch tersebut sehingga akan menambah hal baru pada branch main/master
 terdapat foto terkait Pull Request.
 
-![](../Screenshots/Pull_req.png)
+![](../Screenshots/pull_req.png)
 
 
 ## Eksplorasi 
