@@ -1,0 +1,4 @@
+feature tambahan:
+- Add payment functionality to checkout process.
+- Include additional shipping options in checkout
+- Implement guest checkout feature
