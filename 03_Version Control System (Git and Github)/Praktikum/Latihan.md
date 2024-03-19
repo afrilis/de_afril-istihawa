@@ -44,7 +44,7 @@ Terdapat foto terkait flow yang disebutkan.
 
 ![](../Screenshots/Workflow.png)
 
-2. Lakukan management konflik pada Github.
+2. Lakukan management konflik pada Github
 
 ![](../Screenshots/Conflik.png)
 
