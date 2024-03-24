@@ -1,2 +1,3 @@
 # data-engineer_afril-istihawa
-Pengumpulan Tugas SI Batch 6
+
+Berisikan Kumpulan Tugas-tugas SIB Batch 6 di Alterra Academy
