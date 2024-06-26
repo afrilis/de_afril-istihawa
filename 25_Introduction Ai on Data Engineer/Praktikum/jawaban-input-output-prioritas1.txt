@@ -1,0 +1,43 @@
+Input:
+
+buatkan skema database simple dalam rumah sakit beserta DDLnya
+
+Output:
+
+-- Skema database rumah sakit
+
+-- Tabel Pasien
+CREATE TABLE Pasien (
+    ID_Pasien INT PRIMARY KEY AUTO_INCREMENT,
+    Nama VARCHAR(100),
+    Alamat VARCHAR(255),
+    Jenis_Kelamin ENUM('Laki-laki', 'Perempuan'),
+    Tanggal_Lahir DATE
+);
+
+-- Tabel Dokter
+CREATE TABLE Dokter (
+    ID_Dokter INT PRIMARY KEY AUTO_INCREMENT,
+    Nama VARCHAR(100),
+    Spesialisasi VARCHAR(100),
+    Tanggal_Mulai_Praktek DATE,
+    Jam_Praktek VARCHAR(50)
+);
+
+-- Tabel Rekam Medis
+CREATE TABLE Rekam_Medis (
+    ID_Rekam_Medis INT PRIMARY KEY AUTO_INCREMENT,
+    ID_Pasien INT,
+    ID_Dokter INT,
+    Tanggal_Periksa DATE,
+    Diagnosis VARCHAR(255),
+    Resep_Medis TEXT,
+    FOREIGN KEY (ID_Pasien) REFERENCES Pasien(ID_Pasien),
+    FOREIGN KEY (ID_Dokter) REFERENCES Dokter(ID_Dokter)
+);
+
+Dalam skema database ini, terdapat tiga tabel utama:
+
+1. Tabel Pasien untuk menyimpan informasi pasien.
+2. Tabel Dokter untuk menyimpan informasi dokter.
+3. Tabel Rekam_Medis untuk menyimpan rekam medis pasien, termasuk informasi mengenai dokter yang menangani pasien tersebut.

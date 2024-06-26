@@ -1,0 +1,1 @@
+Total penjualan dalam dataset adalah 1888 unit. Rata-rata harga produk adalah 377.60 dan terdapat 3 produk unik dalam dataset.

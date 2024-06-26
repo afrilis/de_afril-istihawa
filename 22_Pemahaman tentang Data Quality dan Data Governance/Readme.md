@@ -1,0 +1,3 @@
+# Resume Data Quality and Data Governance
+
+Data Quality adalah konsep yang berkaitan dengan keakuratan, kebersihan, kelengkapan, dan konsistensi data dalam sebuah organisasi. Hal ini melibatkan proses pengumpulan, pemrosesan, dan penyimpanan data yang memastikan data tersebut bersih dan bermanfaat. Sementara itu, Data Governance merupakan kerangka kerja yang mengatur pengelolaan data secara keseluruhan, termasuk kebijakan, prosedur, dan tanggung jawab yang ditetapkan untuk memastikan keamanan, privasi, dan integritas data. Keduanya saling terkait karena Data Governance membantu menjaga kualitas data dengan menetapkan standar, proses, dan peran yang jelas dalam pengelolaan data, sehingga meningkatkan kepercayaan dan nilai data dalam pengambilan keputusan.

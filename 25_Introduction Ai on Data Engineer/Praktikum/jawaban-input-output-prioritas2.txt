@@ -1,0 +1,159 @@
+Input:
+
+Gunakan template yang lebih kompleks atau buat input yang lebih spesifik dan menantang dari skema databse rumah sakit, misalnya analisis data multivariat atau optimasi query SQL.
+
+Output:
+
+-- Skema database rumah sakit yang lebih kompleks
+
+-- Tabel Pasien
+CREATE TABLE Pasien (
+    ID_Pasien INT PRIMARY KEY AUTO_INCREMENT,
+    Nama VARCHAR(100),
+    Alamat VARCHAR(255),
+    Jenis_Kelamin ENUM('Laki-laki', 'Perempuan'),
+    Tanggal_Lahir DATE
+);
+
+-- Tabel Dokter
+CREATE TABLE Dokter (
+    ID_Dokter INT PRIMARY KEY AUTO_INCREMENT,
+    Nama VARCHAR(100),
+    Spesialisasi VARCHAR(100),
+    Tanggal_Mulai_Praktek DATE,
+    Jam_Praktek VARCHAR(50)
+);
+
+-- Tabel Rekam Medis
+CREATE TABLE Rekam_Medis (
+    ID_Rekam_Medis INT PRIMARY KEY AUTO_INCREMENT,
+    ID_Pasien INT,
+    ID_Dokter INT,
+    Tanggal_Periksa DATE,
+    Diagnosis VARCHAR(255),
+    Resep_Medis TEXT,
+    Biaya DECIMAL(10, 2),
+    FOREIGN KEY (ID_Pasien) REFERENCES Pasien(ID_Pasien),
+    FOREIGN KEY (ID_Dokter) REFERENCES Dokter(ID_Dokter)
+);
+
+-- Tabel Obat
+CREATE TABLE Obat (
+    ID_Obat INT PRIMARY KEY AUTO_INCREMENT,
+    Nama_Obat VARCHAR(100),
+    Harga DECIMAL(10, 2)
+);
+
+-- Tabel Detail_Resep
+CREATE TABLE Detail_Resep (
+    ID_Detail_Resep INT PRIMARY KEY AUTO_INCREMENT,
+    ID_Rekam_Medis INT,
+    ID_Obat INT,
+    Jumlah INT,
+    FOREIGN KEY (ID_Rekam_Medis) REFERENCES Rekam_Medis(ID_Rekam_Medis),
+    FOREIGN KEY (ID_Obat) REFERENCES Obat(ID_Obat)
+);
+
+-- Contoh data
+INSERT INTO Pasien (Nama, Alamat, Jenis_Kelamin, Tanggal_Lahir) VALUES 
+('Andi', 'Jl. Merdeka No. 10', 'Laki-laki', '1990-05-15'),
+('Budi', 'Jl. Pahlawan No. 20', 'Laki-laki', '1985-10-20'),
+('Citra', 'Jl. Jendral Sudirman No. 5', 'Perempuan', '1995-03-08');
+
+INSERT INTO Dokter (Nama, Spesialisasi, Tanggal_Mulai_Praktek, Jam_Praktek) VALUES 
+('Dr. Fadil', 'Bedah Umum', '2008-01-10', 'Senin-Jumat (08:00-16:00)'),
+('Dr. Lina', 'Anak', '2010-05-20', 'Senin-Jumat (08:00-16:00)'),
+('Dr. Budi', 'Kandungan', '2015-03-15', 'Senin-Jumat (08:00-16:00)');
+
+INSERT INTO Rekam_Medis (ID_Pasien, ID_Dokter, Tanggal_Periksa, Diagnosis, Resep_Medis, Biaya) VALUES 
+(1, 1, '2024-04-20', 'Patah tulang tangan', 'Istirahat total, minum obat penghilang rasa sakit', 2500000.00),
+(2, 2, '2024-04-21', 'Demam', 'Minum obat penurun demam, banyak istirahat', 500000.00),
+(3, 3, '2024-04-22', 'Kehamilan trimester pertama', 'Konsumsi makanan sehat, rutin kontrol ke dokter', 750000.00);
+
+INSERT INTO Obat (Nama_Obat, Harga) VALUES 
+('Paracetamol', 5000.00),
+('Amoxicillin', 10000.00),
+('Vitamin C', 2000.00);
+
+INSERT INTO Detail_Resep (ID_Rekam_Medis, ID_Obat, Jumlah) VALUES 
+(1, 1, 10),
+(2, 1, 5),
+(2, 2, 10),
+(3, 3, 30);
+
+-- Contoh query
+
+-- Mengambil daftar pasien beserta rekam medisnya
+SELECT 
+    p.Nama AS Nama_Pasien, 
+    p.Alamat,
+    p.Jenis_Kelamin,
+    p.Tanggal_Lahir,
+    d.Nama AS Nama_Dokter,
+    d.Spesialisasi,
+    rm.Tanggal_Periksa,
+    rm.Diagnosis,
+    rm.Resep_Medis,
+    rm.Biaya
+FROM 
+    Pasien p
+    JOIN Rekam_Medis rm ON p.ID_Pasien = rm.ID_Pasien
+    JOIN Dokter d ON rm.ID_Dokter = d.ID_Dokter;
+
+-- Menghitung total biaya per pasien
+SELECT 
+    p.Nama AS Nama_Pasien,
+    SUM(rm.Biaya) AS Total_Biaya
+FROM 
+    Pasien p
+    JOIN Rekam_Medis rm ON p.ID_Pasien = rm.ID_Pasien
+GROUP BY 
+    p.ID_Pasien;
+
+-- Menghitung total biaya obat per resep medis
+SELECT 
+    rm.ID_Rekam_Medis,
+    SUM(dr.Jumlah * o.Harga) AS Total_Biaya_Obat
+FROM 
+    Rekam_Medis rm
+    JOIN Detail_Resep dr ON rm.ID_Rekam_Medis = dr.ID_Rekam_Medis
+    JOIN Obat o ON dr.ID_Obat = o.ID_Obat
+GROUP BY 
+    rm.ID_Rekam_Medis;
+
+Dalam skema ini, terdapat lima tabel utama:
+
+Tabel Pasien untuk menyimpan informasi pasien.
+Tabel Dokter untuk menyimpan informasi dokter.
+Tabel Rekam_Medis untuk menyimpan rekam medis pasien, termasuk informasi mengenai dokter yang menangani pasien tersebut.
+Tabel Obat untuk menyimpan informasi obat yang tersedia di rumah sakit.
+Tabel Detail_Resep untuk menyimpan detail resep obat yang diberikan kepada pasien.
+Contoh query SQL di atas adalah contoh analisis data sederhana yang dapat dilakukan menggunakan skema database ini, termasuk pengambilan daftar pasien beserta rekam medisnya, perhitungan total biaya per pasien, dan perhitungan total biaya obat per resep medis. Dengan skema ini, kita dapat melakukan analisis yang lebih mendalam terhadap data rumah sakit, seperti pemantauan biaya pasien, pengelolaan stok obat, dan analisis tren penyakit.
+
+Input:
+
+Analisis bagaimana AI memproses input yang lebih kompleks seperti diatas.
+Identifikasi kelebihan dan keterbatasan AI dalam kasus diatas. Buat dalam bentuk paragraf
+
+Output:
+
+Dalam kasus skema database rumah sakit yang lebih kompleks seperti di atas, AI akan memproses input dengan menggunakan aturan-aturan sintaks SQL yang telah dipelajari dari data yang tersedia. AI akan menganalisis struktur skema database yang diberikan, termasuk tabel-tabel yang terlibat, hubungan antar tabel, dan struktur kolom. Selanjutnya, AI akan menggunakan pengetahuannya untuk menghasilkan output berupa perintah SQL yang sesuai, termasuk pembuatan tabel-tabel, definisi kolom, kunci asing, dan contoh data.
+
+Kelebihan AI dalam kasus ini adalah kemampuannya untuk secara otomatis menganalisis struktur skema database yang kompleks dan menghasilkan perintah SQL yang sesuai dengan kebutuhan. AI dapat menghasilkan DDL (Data Definition Language) yang kompleks dengan cepat dan efisien, mengurangi waktu dan upaya yang dibutuhkan untuk membuat skema database yang kompleks.
+
+Namun, ada beberapa keterbatasan yang perlu diperhatikan seperti:
+Keterbatasan Pengetahuan: AI hanya dapat menghasilkan output berdasarkan pengetahuan yang telah dipelajarinya dari data yang ada. Jika ada elemen dalam skema database yang tidak dikenali oleh AI, atau jika ada aturan bisnis khusus yang harus diterapkan, AI mungkin tidak akan menghasilkan output yang sesuai.
+Keterbatasan Analisis Konteks: Meskipun AI dapat menghasilkan perintah SQL yang valid, ia mungkin tidak selalu memahami konteks di balik data atau kebutuhan analisis data yang lebih mendalam. Misalnya, AI mungkin tidak dapat mengenali potensi masalah kinerja atau optimasi query yang diperlukan.
+Ketergantungan pada Data Training: Kualitas output AI bergantung pada kualitas data pelatihan yang digunakan. Jika data pelatihan tidak representatif atau tidak lengkap, output AI mungkin tidak optimal.
+
+Input:
+
+Buat penjelasan mendalam tentang hasil dan implikasinya dalam Data Engineering. Dalam bentuk paragraf
+
+Output:
+
+Hasil dari skema database rumah sakit yang lebih kompleks ini menawarkan struktur data yang lebih rinci dan detail, mencakup tabel-tabel untuk pasien, dokter, rekam medis, obat, serta detail resep obat. DDL yang dihasilkan oleh AI memungkinkan pembuatan skema database yang lengkap dan siap digunakan untuk menyimpan data rumah sakit dengan lebih efisien.
+
+Implikasi dari hasil ini dalam Data Engineering sangat signifikan. Pertama, skema database yang lengkap dan rinci memungkinkan pengelolaan data rumah sakit secara efisien, termasuk pengelolaan informasi pasien, rekam medis, informasi dokter, dan informasi obat. Dengan struktur data yang terdefinisi dengan baik, pengembang perangkat lunak dapat dengan mudah mengakses dan memanipulasi data untuk membangun aplikasi rumah sakit yang lebih kompleks dan berfungsi.
+
+Kedua, dengan skema database yang lebih lengkap, Data Engineer dapat melakukan analisis data yang lebih mendalam untuk mendapatkan wawasan yang berharga. Misalnya, dengan menggunakan contoh query SQL yang disediakan, Data Engineer dapat melakukan analisis biaya per pasien, mengidentifikasi pola penyakit yang umum, mengelola stok obat, serta menganalisis tren penggunaan obat dan biaya pengobatan.

@@ -1,0 +1,10 @@
+# Resume Data Visualization
+
+Data visualisasi adalah proses representasi data dan informasi dalam bentuk grafik, plot, dan diagram untuk mempermudah pemahaman pola, tren, dan hubungan dalam data. Data visualisasi memainkan peran penting dalam analisis data, komunikasi informasi, dan pengambilan keputusan. Penggunaan visualisasi data dapat membantu untuk memahami data dengan lebih baik daripada hanya melihat angka dan tabel.
+
+Beberapa library Python yang sangat populer digunakan untuk melakukan visualisasi data, di antaranya adalah Matplotlib, Pandas, dan Seaborn.
+Matplotlib merupakan library visualisasi data yang paling umum digunakan dalam Python. Matplotlib memberikan kontrol penuh terhadap elemen-elemen visual seperti plot, grafik, dan diagram. Dengan Matplotlib dapat membuat berbagai jenis visualisasi, mulai dari plot sederhana hingga visualisasi yang kompleks.
+Pandas adalah library Python yang juga populer untuk manipulasi dan analisis data. Pandas menyediakan fungsi dan metode yang kuat untuk membaca, menulis, dan menganalisis data. Salah satu fitur utama dari Pandas adalah kemampuannya untuk membuat visualisasi data dengan mudah menggunakan fungsi plot() yang terintegrasi. Pandas menggunakan Matplotlib di balik layar untuk membuat visualisasi data.
+Seaborn merupakan library Python yang dibangun di atas Matplotlib dan menyediakan antarmuka tingkat tinggi untuk membuat visualisasi data statistik yang menarik dan informatif. Seaborn menyediakan fungsi-fungsi yang mudah digunakan untuk membuat plot yang menarik dengan hanya beberapa baris kode. Selain itu, Seaborn juga memungkinkan kita untuk dengan mudah menyesuaikan plot dengan menggunakan palet warna, gaya, dan tema yang berbeda.
+
+Dalam praktiknya, ketiga library ini sering digunakan bersama-sama untuk melakukan visualisasi data. Matplotlib digunakan untuk membuat plot dasar, sedangkan Pandas digunakan untuk membuat plot dari DataFrame secara langsung tanpa perlu memanggil Matplotlib secara langsung. Seaborn digunakan untuk membuat visualisasi data statistik yang lebih kompleks dan menarik dengan mudah.

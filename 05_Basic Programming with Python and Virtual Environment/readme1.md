@@ -1,0 +1,1 @@
+Python adalah bahasa pemrograman tingkat tinggi yang populer karena sintaksisnya yang sederhana dan mudah dipahami, cocok untuk pemula maupun pengembang yang berpengalaman. Virtual Environment (venv) adalah lingkungan isolasi yang memungkinkan Anda mengelola paket dan dependensi Python secara terpisah untuk setiap proyek, menjaga kebersihan dan konsistensi instalasi paket.
