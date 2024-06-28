@@ -1,0 +1,7 @@
+# Resume Workflow Orchestration with Airflow
+
+Workflow Orchestration with Airflow adalah suatu metode untuk mengelola dan mengatur alur kerja (workflow) dalam sebuah sistem secara efisien. Konsep utama yang digunakan dalam Airflow adalah Directed Acyclic Graphs (DAGs), yang merupakan representasi visual dari serangkaian task yang harus dilakukan dalam suatu workflow. Setiap DAG terdiri dari serangkaian task yang harus dieksekusi dalam urutan tertentu.
+
+Dalam Airflow, setiap task direpresentasikan oleh sebuah objek yang disebut Operator. Terdapat berbagai jenis Operator yang dapat digunakan sesuai kebutuhan, seperti PythonOperator untuk mengeksekusi fungsi Python, BashOperator untuk menjalankan perintah bash, dan lain sebagainya. Apache Airflow sendiri adalah platform open-source yang digunakan untuk membuat, menjalankan, dan mengatur workflow secara terpusat. Dengan Airflow, pengguna dapat dengan mudah membuat DAGs, menentukan ketergantungan antar task, serta mengelola jadwal eksekusi task-task tersebut.
+
+Dengan menggunakan konsep DAGs, Task, dan Operator yang disediakan oleh Apache Airflow, pengguna dapat membangun workflow yang kompleks secara terstruktur. Airflow memberikan fleksibilitas dan skalabilitas dalam mengelola alur kerja, sehingga sangat cocok digunakan dalam berbagai jenis proyek yang memerlukan pengaturan workflow yang efisien dan teratur.

@@ -1,0 +1,14 @@
+[2024-04-24T07:30:54.944+0000] {processor.py:161} INFO - Started process (PID=589) to work on /opt/airflow/dags/Eksplorasi.py
+[2024-04-24T07:30:54.945+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/Eksplorasi.py for tasks to queue
+[2024-04-24T07:30:54.948+0000] {logging_mixin.py:188} INFO - [2024-04-24T07:30:54.947+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/Eksplorasi.py
+[2024-04-24T07:30:56.003+0000] {processor.py:840} INFO - DAG(s) 'ETL_pipeline' retrieved from /opt/airflow/dags/Eksplorasi.py
+[2024-04-24T07:30:56.096+0000] {logging_mixin.py:188} INFO - [2024-04-24T07:30:56.096+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-04-24T07:30:56.113+0000] {logging_mixin.py:188} INFO - [2024-04-24T07:30:56.113+0000] {dag.py:3954} INFO - Setting next_dagrun for ETL_pipeline to 2022-05-26 00:00:00+00:00, run_after=2022-05-27 00:00:00+00:00
+[2024-04-24T07:30:56.135+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/Eksplorasi.py took 1.197 seconds
+[2024-04-24T07:32:37.676+0000] {processor.py:161} INFO - Started process (PID=25) to work on /opt/airflow/dags/Eksplorasi.py
+[2024-04-24T07:32:37.678+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/Eksplorasi.py for tasks to queue
+[2024-04-24T07:32:37.681+0000] {logging_mixin.py:188} INFO - [2024-04-24T07:32:37.680+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/Eksplorasi.py
+[2024-04-24T07:32:41.502+0000] {processor.py:840} INFO - DAG(s) 'ETL_pipeline' retrieved from /opt/airflow/dags/Eksplorasi.py
+[2024-04-24T07:32:42.689+0000] {logging_mixin.py:188} INFO - [2024-04-24T07:32:42.679+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-04-24T07:32:42.806+0000] {logging_mixin.py:188} INFO - [2024-04-24T07:32:42.806+0000] {dag.py:3954} INFO - Setting next_dagrun for ETL_pipeline to 2022-06-05 00:00:00+00:00, run_after=2022-06-06 00:00:00+00:00
+[2024-04-24T07:32:42.882+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/Eksplorasi.py took 5.214 seconds

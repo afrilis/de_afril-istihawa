@@ -1,0 +1,29 @@
+[2024-04-14T19:07:12.869+0000] {processor.py:161} INFO - Started process (PID=601) to work on /opt/airflow/dags/hello_airflow1_dag.py
+[2024-04-14T19:07:12.870+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/hello_airflow1_dag.py for tasks to queue
+[2024-04-14T19:07:12.873+0000] {logging_mixin.py:188} INFO - [2024-04-14T19:07:12.873+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/hello_airflow1_dag.py
+[2024-04-14T19:07:12.941+0000] {processor.py:840} INFO - DAG(s) 'hello_airflow1_dag' retrieved from /opt/airflow/dags/hello_airflow1_dag.py
+[2024-04-14T19:07:13.164+0000] {logging_mixin.py:188} INFO - [2024-04-14T19:07:13.163+0000] {override.py:1829} INFO - Created Permission View: can delete on DAG:hello_airflow1_dag
+[2024-04-14T19:07:13.175+0000] {logging_mixin.py:188} INFO - [2024-04-14T19:07:13.175+0000] {override.py:1829} INFO - Created Permission View: can edit on DAG:hello_airflow1_dag
+[2024-04-14T19:07:13.183+0000] {logging_mixin.py:188} INFO - [2024-04-14T19:07:13.183+0000] {override.py:1829} INFO - Created Permission View: can read on DAG:hello_airflow1_dag
+[2024-04-14T19:07:13.184+0000] {logging_mixin.py:188} INFO - [2024-04-14T19:07:13.184+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-04-14T19:07:13.200+0000] {logging_mixin.py:188} INFO - [2024-04-14T19:07:13.199+0000] {dag.py:3118} INFO - Creating ORM DAG for hello_airflow1_dag
+[2024-04-14T19:07:13.215+0000] {logging_mixin.py:188} INFO - [2024-04-14T19:07:13.215+0000] {dag.py:3954} INFO - Setting next_dagrun for hello_airflow1_dag to 2024-04-12 00:00:00+00:00, run_after=2024-04-13 00:00:00+00:00
+[2024-04-14T19:07:13.383+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/hello_airflow1_dag.py took 0.526 seconds
+[2024-04-14T19:07:43.445+0000] {processor.py:161} INFO - Started process (PID=663) to work on /opt/airflow/dags/hello_airflow1_dag.py
+[2024-04-14T19:07:43.446+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/hello_airflow1_dag.py for tasks to queue
+[2024-04-14T19:07:43.450+0000] {logging_mixin.py:188} INFO - [2024-04-14T19:07:43.449+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/hello_airflow1_dag.py
+[2024-04-14T19:07:43.469+0000] {processor.py:840} INFO - DAG(s) 'hello_airflow1_dag' retrieved from /opt/airflow/dags/hello_airflow1_dag.py
+[2024-04-14T19:07:43.489+0000] {logging_mixin.py:188} INFO - [2024-04-14T19:07:43.489+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-04-14T19:07:43.509+0000] {logging_mixin.py:188} INFO - [2024-04-14T19:07:43.509+0000] {dag.py:3954} INFO - Setting next_dagrun for hello_airflow1_dag to 2024-04-12 00:00:00+00:00, run_after=2024-04-13 00:00:00+00:00
+[2024-04-14T19:07:43.565+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/hello_airflow1_dag.py took 0.128 seconds
+[2024-04-14T19:07:46.954+0000] {processor.py:161} INFO - Started process (PID=671) to work on /opt/airflow/dags/hello_airflow1_dag.py
+[2024-04-14T19:07:46.956+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/hello_airflow1_dag.py for tasks to queue
+[2024-04-14T19:07:46.958+0000] {logging_mixin.py:188} INFO - [2024-04-14T19:07:46.958+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/hello_airflow1_dag.py
+[2024-04-14T19:07:47.022+0000] {processor.py:840} INFO - DAG(s) 'hello_airflow_dag' retrieved from /opt/airflow/dags/hello_airflow1_dag.py
+[2024-04-14T19:07:47.150+0000] {logging_mixin.py:188} INFO - [2024-04-14T19:07:47.150+0000] {override.py:1829} INFO - Created Permission View: can delete on DAG:hello_airflow_dag
+[2024-04-14T19:07:47.161+0000] {logging_mixin.py:188} INFO - [2024-04-14T19:07:47.161+0000] {override.py:1829} INFO - Created Permission View: can edit on DAG:hello_airflow_dag
+[2024-04-14T19:07:47.168+0000] {logging_mixin.py:188} INFO - [2024-04-14T19:07:47.168+0000] {override.py:1829} INFO - Created Permission View: can read on DAG:hello_airflow_dag
+[2024-04-14T19:07:47.169+0000] {logging_mixin.py:188} INFO - [2024-04-14T19:07:47.169+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-04-14T19:07:47.182+0000] {logging_mixin.py:188} INFO - [2024-04-14T19:07:47.182+0000] {dag.py:3118} INFO - Creating ORM DAG for hello_airflow_dag
+[2024-04-14T19:07:47.197+0000] {logging_mixin.py:188} INFO - [2024-04-14T19:07:47.197+0000] {dag.py:3954} INFO - Setting next_dagrun for hello_airflow_dag to 2024-04-12 00:00:00+00:00, run_after=2024-04-13 00:00:00+00:00
+[2024-04-14T19:07:47.226+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/hello_airflow1_dag.py took 0.277 seconds

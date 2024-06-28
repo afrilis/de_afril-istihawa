@@ -1,0 +1,39 @@
+[2024-04-15T14:54:33.349+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-04-15T14:54:33.416+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: hello_airflow_dag.touch_about_us_txt_task scheduled__2024-04-14T00:00:00+00:00 [queued]>
+[2024-04-15T14:54:33.431+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: hello_airflow_dag.touch_about_us_txt_task scheduled__2024-04-14T00:00:00+00:00 [queued]>
+[2024-04-15T14:54:33.432+0000] {taskinstance.py:2303} INFO - Starting attempt 1 of 11
+[2024-04-15T14:54:33.459+0000] {taskinstance.py:2327} INFO - Executing <Task(BashOperator): touch_about_us_txt_task> on 2024-04-14 00:00:00+00:00
+[2024-04-15T14:54:33.470+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=768) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-04-15T14:54:33.474+0000] {standard_task_runner.py:63} INFO - Started process 770 to run task
+[2024-04-15T14:54:33.473+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'hello_***_dag', 'touch_about_us_txt_task', 'scheduled__2024-04-14T00:00:00+00:00', '--job-id', '20', '--raw', '--subdir', 'DAGS_FOLDER/hello_***_dag.py', '--cfg-path', '/tmp/tmp5by4cdm_']
+[2024-04-15T14:54:33.477+0000] {standard_task_runner.py:91} INFO - Job 20: Subtask touch_about_us_txt_task
+[2024-04-15T14:54:33.608+0000] {task_command.py:426} INFO - Running <TaskInstance: hello_airflow_dag.touch_about_us_txt_task scheduled__2024-04-14T00:00:00+00:00 [running]> on host ead826da457c
+[2024-04-15T14:54:33.824+0000] {taskinstance.py:2644} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='yazid' AIRFLOW_CTX_DAG_ID='hello_***_dag' AIRFLOW_CTX_TASK_ID='touch_about_us_txt_task' AIRFLOW_CTX_EXECUTION_DATE='2024-04-14T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-04-14T00:00:00+00:00'
+[2024-04-15T14:54:33.827+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-04-15T14:54:33.828+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2024-04-15T14:54:33.830+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'touch about_us/about.txt']
+[2024-04-15T14:54:33.861+0000] {subprocess.py:86} INFO - Output:
+[2024-04-15T14:54:33.938+0000] {subprocess.py:93} INFO - touch: cannot touch 'about_us/about.txt': No such file or directory
+[2024-04-15T14:54:33.944+0000] {subprocess.py:97} INFO - Command exited with return code 1
+[2024-04-15T14:54:33.947+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-04-15T14:54:33.976+0000] {taskinstance.py:2890} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 400, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/bash.py", line 243, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 1.
+[2024-04-15T14:54:33.999+0000] {taskinstance.py:1205} INFO - Marking task as UP_FOR_RETRY. dag_id=hello_***_dag, task_id=touch_about_us_txt_task, execution_date=20240414T000000, start_date=20240415T145433, end_date=20240415T145433
+[2024-04-15T14:54:34.039+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 20 for task touch_about_us_txt_task (Bash command failed. The command returned a non-zero exit code 1.; 770)
+[2024-04-15T14:54:34.082+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 1
+[2024-04-15T14:54:34.148+0000] {taskinstance.py:3482} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-04-15T14:54:34.152+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

@@ -1,0 +1,1 @@
+[2024-04-15T14:55:16.673+0000] {task_context_logger.py:104} ERROR - Executor reports task instance <TaskInstance: get_data_dag.write_to_csv scheduled__2024-04-13T00:00:00+00:00 [queued]> finished (failed) although the task says it's queued. (Info: None) Was the task killed externally?

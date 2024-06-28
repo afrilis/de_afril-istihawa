@@ -1,0 +1,101 @@
+transaction_id,transaction_date,customer_name,transaction_amount,item_category,item_name,payment_method,status
+1,01-11-2023,John Doe,50,book,The Great Gatsby,credit card,success
+2,01-11-2023,Jane Smith,120.5,gaming,PlayStation 5,cash,success
+3,02-11-2023,Bob Johnson,800,technology,Laptop,credit card,failed
+4,03-11-2023,Alice Williams,30,kitchen,Coffee Maker,e wallet,success
+5,03-11-2023,Charlie Brown,150,book,To Kill a Mockingbird,credit card,success
+6,04-11-2023,David Wilson,450,gaming,Nintendo Switch,cash,success
+7,04-11-2023,Emma Davis,200,technology,Smartphone,e wallet,success
+8,05-11-2023,George Thompson,25,kitchen,Blender,credit card,failed
+9,05-11-2023,Olivia Martin,350,book,1984,credit card,success
+10,06-11-2023,Samuel Moore,100,gaming,Xbox Series X,cash,success
+11,07-11-2023,Sophia White,75,technology,Tablet,e wallet,success
+12,07-11-2023,William Turner,18,kitchen,Toaster,credit card,success
+13,08-11-2023,Grace Harris,90,book,Brave New World,credit card,failed
+14,08-11-2023,Ethan Miller,15.5,gaming,PC Game: Cyberpunk 2077,cash,success
+15,09-11-2023,James Taylor,60,technology,Smartwatch,e wallet,success
+16,10-11-2023,Lily Anderson,8,kitchen,Kitchen Scale,credit card,success
+17,10-11-2023,Mason Evans,280,book,The Catcher in the Rye,credit card,success
+18,11-11-2023,Emily Moore,55.5,gaming,Board Game: Catan,cash,success
+19,11-11-2023,Lucas Robinson,80,technology,Bluetooth Earbuds,e wallet,failed
+20,12-11-2023,Isabella Martinez,35,kitchen,Cookware Set,credit card,success
+21,12-11-2023,Noah Clark,9,book,Lord of the Rings Trilogy,credit card,success
+22,13-11-2023,Chloe Ward,14,gaming,Headset,cash,success
+23,14-11-2023,Aiden Hill,20.5,technology,External Hard Drive,e wallet,success
+24,14-11-2023,Mia Turner,6,kitchen,Cutting Board,credit card,failed
+25,15-11-2023,Ava Jones,17,book,The Hobbit,credit card,success
+26,15-11-2023,Oliver Brown,150,gaming,PlayStation 4,cash,success
+27,16-11-2023,Sophie Davis,500,technology,Laptop,credit card,success
+28,17-11-2023,Ethan Taylor,45,kitchen,Coffee Grinder,e wallet,success
+29,17-11-2023,Liam Wilson,300,book,Harry Potter Box Set,credit card,success
+30,18-11-2023,Aria Robinson,22,gaming,Nintendo Switch Lite,cash,failed
+31,18-11-2023,Noah Martinez,120,technology,Smartphone,e wallet,success
+32,19-11-2023,Grace Moore,19,kitchen,Toaster Oven,credit card,success
+33,19-11-2023,Ella Davis,75,book,The Shining,credit card,success
+34,20-11-2023,Leo Hill,30.5,gaming,PC Game: The Witcher 3,cash,success
+35,20-11-2023,Lucas Smith,200,technology,Tablet,e wallet,success
+36,21-11-2023,Amelia Harris,12,kitchen,Mixing Bowl Set,credit card,failed
+37,21-11-2023,Aiden Turner,160,book,The Da Vinci Code,credit card,success
+38,22-11-2023,Ella Brown,40,gaming,Board Game: Risk,cash,success
+39,22-11-2023,Liam Turner,90,technology,Wireless Mouse,e wallet,success
+40,23-11-2023,Mia Robinson,8,kitchen,Kitchen Timer,credit card,success
+41,23-11-2023,Noah Wilson,270,book,Game of Thrones Box Set,credit card,success
+42,24-11-2023,Ava Davis,55,gaming,Headphones,cash,success
+43,24-11-2023,Lucas Taylor,350,technology,Bluetooth Speaker,e wallet,success
+44,25-11-2023,Sophia Turner,25,kitchen,Knife Set,credit card,success
+45,25-11-2023,Oliver Hill,30,book,The Hunger Games Trilogy,credit card,success
+46,26-11-2023,Aria Wilson,18.5,gaming,PC Game: Among Us,cash,failed
+47,26-11-2023,Liam Harris,120,technology,External SSD,e wallet,success
+48,27-11-2023,Ethan Turner,9,kitchen,Baking Sheet,credit card,success
+49,27-11-2023,Chloe Brown,40.5,book,The Alchemist,credit card,success
+50,28-11-2023,Mia Smith,70,gaming,Nintendo 3DS,cash,success
+51,28-11-2023,Noah Davis,180,technology,Wireless Keyboard,e wallet,failed
+52,29-11-2023,Lucas Harris,15,kitchen,Peeler,credit card,success
+53,29-11-2023,Amelia Turner,28.5,book,The Girl on the Train,credit card,success
+54,30-11-2023,Ella Hill,10,gaming,Mouse Pad,cash,success
+55,30-11-2023,Leo Robinson,240,technology,Smartwatch,e wallet,success
+56,01-12-2023,Aiden Smith,35,kitchen,Cutting Board Set,credit card,failed
+57,01-12-2023,Sophie Robinson,80,book,The Maze Runner Series,credit card,success
+58,02-12-2023,Noah Turner,7.5,gaming,Mobile Game Controller,cash,success
+59,02-12-2023,Liam Brown,150,technology,Laptop Stand,e wallet,success
+60,03-12-2023,Ella Taylor,20,kitchen,Mixing Spoon Set,credit card,success
+61,03-12-2023,Aria Hill,45,book,The Fault in Our Stars,credit card,success
+62,04-12-2023,Oliver Turner,10.5,gaming,PlayStation Controller,cash,success
+63,04-12-2023,Lucas Turner,200,technology,Power Bank,e wallet,failed
+64,05-12-2023,Mia Harris,15,kitchen,Cake Pan,credit card,success
+65,05-12-2023,Sophia Turner,60,book,The Chronicles of Narnia Box Set,credit card,success
+66,06-12-2023,Leo Hill,25.5,gaming,PC Game: Fortnite,cash,success
+67,06-12-2023,Ethan Turner,180,technology,Wireless Headphones,e wallet,success
+68,07-12-2023,Chloe Davis,8,kitchen,Measuring Cups Set,credit card,success
+69,07-12-2023,Amelia Hill,35,book,The Diary of a Young Girl,credit card,failed
+70,08-12-2023,Liam Robinson,90,gaming,Board Game: Chess,cash,success
+71,08-12-2023,Noah Wilson,300,technology,Bluetooth Mouse,e wallet,success
+72,09-12-2023,Ava Harris,18,kitchen,Kitchen Shears,credit card,success
+73,09-12-2023,Ella Turner,65,book,The Girl with the Dragon Tattoo,credit card,success
+74,10-12-2023,Oliver Brown,15.5,gaming,Mouse Mat,cash,success
+75,10-12-2023,Lucas Davis,250,technology,Camera,e wallet,success
+76,11-12-2023,Sophie Turner,30,kitchen,Muffin Pan,credit card,failed
+77,11-12-2023,Aiden Smith,120,book,The Outsiders,credit card,success
+78,12-12-2023,Chloe Wilson,40,gaming,VR Headset,cash,success
+79,12-12-2023,Ethan Turner,80,technology,External Webcam,e wallet,success
+80,13-12-2023,Amelia Robinson,14,kitchen,Whisk,credit card,success
+81,13-12-2023,Liam Taylor,25.5,book,The Art of War,credit card,success
+82,14-12-2023,Mia Hill,10,gaming,PC Game: Apex Legends,cash,success
+83,14-12-2023,Noah Turner,180,technology,Wireless Charger,e wallet,failed
+84,15-12-2023,Oliver Davis,30,kitchen,Strainer,credit card,success
+85,15-12-2023,Sophia Robinson,80,book,The Hobbit,credit card,success
+86,16-12-2023,Leo Smith,12.5,gaming,Mobile Gaming Controller,cash,success
+87,16-12-2023,Ella Brown,120,technology,Graphic Tablet,e wallet,success
+88,17-12-2023,Ava Harris,22,kitchen,Pastry Brush,credit card,failed
+89,17-12-2023,Lucas Robinson,90,book,The Kite Runner,credit card,success
+90,18-12-2023,Chloe Davis,50.5,gaming,PlayStation VR,cash,success
+91,18-12-2023,Amelia Hill,300,technology,Smart Speaker,e wallet,success
+92,19-12-2023,Liam Turner,9,kitchen,Kitchen Tongs,credit card,success
+93,19-12-2023,Noah Wilson,150,book,The Art of Happiness,credit card,success
+94,20-12-2023,Sophie Turner,5,gaming,Mouse Pad,cash,success
+95,20-12-2023,Aiden Robinson,200,technology,Wireless Keyboard,e wallet,failed
+96,21-12-2023,Oliver Brown,15,kitchen,Peeler,credit card,success
+97,21-12-2023,Chloe Wilson,75.5,book,The Road,credit card,success
+98,22-12-2023,Ella Harris,30,gaming,Board Game: Monopoly,cash,success
+99,22-12-2023,Liam Turner,180,technology,Bluetooth Earbuds,e wallet,success
+100,23-12-2023,Mia Robinson,10,kitchen,Can Opener,credit card,success

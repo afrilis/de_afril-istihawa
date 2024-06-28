@@ -1,0 +1,78 @@
+[2024-04-15T19:04:23.946+0000] {processor.py:161} INFO - Started process (PID=2461) to work on /opt/airflow/dags/eksplorasi1_dag.py
+[2024-04-15T19:04:23.947+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/eksplorasi1_dag.py for tasks to queue
+[2024-04-15T19:04:23.949+0000] {logging_mixin.py:188} INFO - [2024-04-15T19:04:23.948+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/eksplorasi1_dag.py
+[2024-04-15T19:04:23.992+0000] {logging_mixin.py:188} INFO - [2024-04-15T19:04:23.983+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/eksplorasi1_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/eksplorasi1_dag.py", line 35, in <module>
+    get_fruits_data_task = HttpOperator(
+                           ^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 484, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/http/operators/http.py", line 125, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 484, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 881, in __init__
+    raise AirflowException(
+airflow.exceptions.AirflowException: Invalid arguments were passed to HttpOperator (task_id: get_fruits_data). Invalid arguments were:
+**kwargs: {'response_parser': 'json'}
+[2024-04-15T19:04:23.993+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/eksplorasi1_dag.py
+[2024-04-15T19:04:24.044+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/eksplorasi1_dag.py took 0.109 seconds
+[2024-04-15T19:04:46.751+0000] {processor.py:161} INFO - Started process (PID=2517) to work on /opt/airflow/dags/eksplorasi1_dag.py
+[2024-04-15T19:04:46.752+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/eksplorasi1_dag.py for tasks to queue
+[2024-04-15T19:04:46.753+0000] {logging_mixin.py:188} INFO - [2024-04-15T19:04:46.753+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/eksplorasi1_dag.py
+[2024-04-15T19:04:46.776+0000] {logging_mixin.py:188} INFO - [2024-04-15T19:04:46.773+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/eksplorasi1_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/eksplorasi1_dag.py", line 35, in <module>
+    get_fruits_data_task = HttpOperator(
+                           ^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 484, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/http/operators/http.py", line 125, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 484, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 881, in __init__
+    raise AirflowException(
+airflow.exceptions.AirflowException: Invalid arguments were passed to HttpOperator (task_id: get_fruits_data). Invalid arguments were:
+**kwargs: {'response_parser': 'json'}
+[2024-04-15T19:04:46.777+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/eksplorasi1_dag.py
+[2024-04-15T19:04:46.794+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/eksplorasi1_dag.py took 0.049 seconds
+[2024-04-15T19:05:17.495+0000] {processor.py:161} INFO - Started process (PID=2578) to work on /opt/airflow/dags/eksplorasi1_dag.py
+[2024-04-15T19:05:17.496+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/eksplorasi1_dag.py for tasks to queue
+[2024-04-15T19:05:17.498+0000] {logging_mixin.py:188} INFO - [2024-04-15T19:05:17.497+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/eksplorasi1_dag.py
+[2024-04-15T19:05:17.556+0000] {logging_mixin.py:188} INFO - [2024-04-15T19:05:17.541+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/eksplorasi1_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/eksplorasi1_dag.py", line 35, in <module>
+    get_fruits_data_task = HttpOperator(
+                           ^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 484, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/http/operators/http.py", line 125, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 484, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 881, in __init__
+    raise AirflowException(
+airflow.exceptions.AirflowException: Invalid arguments were passed to HttpOperator (task_id: get_fruits_data). Invalid arguments were:
+**kwargs: {'response_parser': 'json'}
+[2024-04-15T19:05:17.557+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/eksplorasi1_dag.py
+[2024-04-15T19:05:17.580+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/eksplorasi1_dag.py took 0.093 seconds

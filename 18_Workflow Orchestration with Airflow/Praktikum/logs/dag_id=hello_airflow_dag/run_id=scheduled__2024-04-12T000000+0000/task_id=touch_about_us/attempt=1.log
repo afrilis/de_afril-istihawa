@@ -1,0 +1,17 @@
+[2024-04-15T16:22:44.827+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-04-15T16:22:44.918+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: hello_airflow_dag.touch_about_us scheduled__2024-04-12T00:00:00+00:00 [queued]>
+[2024-04-15T16:22:45.015+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: hello_airflow_dag.touch_about_us scheduled__2024-04-12T00:00:00+00:00 [queued]>
+[2024-04-15T16:22:45.017+0000] {taskinstance.py:2303} INFO - Starting attempt 1 of 6
+[2024-04-15T16:22:45.061+0000] {taskinstance.py:2327} INFO - Executing <Task(BashOperator): touch_about_us> on 2024-04-12 00:00:00+00:00
+[2024-04-15T16:22:45.085+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=170) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-04-15T16:22:45.088+0000] {standard_task_runner.py:63} INFO - Started process 180 to run task
+[2024-04-15T16:22:45.095+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'hello_***_dag', 'touch_about_us', 'scheduled__2024-04-12T00:00:00+00:00', '--job-id', '56', '--raw', '--subdir', 'DAGS_FOLDER/hello_***_dag.py', '--cfg-path', '/tmp/tmp9d62cxic']
+[2024-04-15T16:22:45.099+0000] {standard_task_runner.py:91} INFO - Job 56: Subtask touch_about_us
+[2024-04-15T16:22:57.949+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 56 for task touch_about_us ((psycopg2.OperationalError) could not translate host name "postgres" to address: Temporary failure in name resolution
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8); 180)
+[2024-04-15T16:23:21.070+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 1
+[2024-04-15T16:23:21.199+0000] {taskinstance.py:3482} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-04-15T16:23:21.210+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
